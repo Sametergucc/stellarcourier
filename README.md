@@ -4,6 +4,13 @@ A blockchain-based secure courier and delivery protocol. The sender locks USDC i
 
 **Repository:** [github.com/Sametergucc/stellarcourier](https://github.com/Sametergucc/stellarcourier)
 
+### Deployed Contracts (Stellar Testnet)
+
+| Contract | ID |
+| --- | --- |
+| Escrow | `CAU3L6VLBKVXNCHKLWPFDFP4QFFDTO7KSKRPAHUASIMGZCD4WEAFG7UF` |
+| USDC (SAC) | `CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA` |
+
 ---
 
 ## Table of Contents

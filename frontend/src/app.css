@@ -1,0 +1,87 @@
+:root {
+  --bg:      #f8f9fa;
+  --surface: #ffffff;
+  --border:  #e8eaed;
+  --primary: #1a73e8;
+  --text:    #1f2937;
+  --muted:   #6b7280;
+  --success: #0f9960;
+  --warning: #d97706;
+  --danger:  #dc2626;
+  --radius:  8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .45rem 1rem;
+  font-size: .85rem;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--text);
+  transition: background .12s, border-color .12s, box-shadow .12s;
+  font-family: inherit;
+}
+button:hover:not(:disabled) { background: var(--bg); }
+button:disabled { opacity: .45; cursor: default; }
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.btn-primary:hover:not(:disabled) { background: #1557b0; }
+
+.btn-success {
+  background: var(--success);
+  color: #fff;
+  border-color: var(--success);
+}
+
+input, select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: .45rem .75rem;
+  font-size: .85rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .12s, box-shadow .12s;
+}
+input:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px #1a73e815;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .15rem .55rem;
+  border-radius: 99px;
+  font-size: .72rem;
+  font-weight: 600;
+  border: 1px solid;
+}
+.badge-green  { background: #f0fdf4; color: var(--success); border-color: #bbf7d0; }
+.badge-yellow { background: #fffbeb; color: var(--warning); border-color: #fde68a; }
+.badge-red    { background: #fef2f2; color: var(--danger);  border-color: #fecaca; }
+.badge-blue   { background: #eff6ff; color: var(--primary); border-color: #bfdbfe; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .4; }
+}

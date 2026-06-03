@@ -1,0 +1,6 @@
+target/
+node_modules/
+frontend/.env
+frontend/.svelte-kit/
+packages/escrow-client/node_modules/
+packages/escrow-client/dist/
